@@ -31,10 +31,10 @@ public class FetchRecord {
 			ResultSet rs = stm.executeQuery(query);
 
 			while (rs.next()) {
-				int sid = rs.getInt("sid");
-				String name = rs.getString("name");
-				String email = rs.getString("email");
-				long phone = rs.getLong("phone");
+				int sid = rs.getInt(1);
+				String name = rs.getString(2);
+				String email = rs.getString(3);
+				long phone = rs.getLong(4);
 				System.out.println("ID: " + sid + ", Name: " + name + ", Email: " + email + ", Phone: " + phone);
 			}
 			System.out.println("Query is executed");
