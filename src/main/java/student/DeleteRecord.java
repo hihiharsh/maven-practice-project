@@ -22,7 +22,7 @@ public class DeleteRecord {
 			Statement stm = con.createStatement();
 			System.out.println("Statement is created");
 
-			String query = "DELETE FROM student WHERE sid = 105";
+			String query = "DELETE FROM student WHERE sid = 107";
 
 			stm.execute(query);
 			System.out.println("Query is executed");
